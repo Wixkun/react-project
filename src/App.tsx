@@ -1,7 +1,11 @@
-import Message from './Message';
+import { useState } from "react";
+
 
 function App() {
-  return <div><Message /></div>
+  const [compteur, setCompteur] = useState(1);
+
+
+  return <h1>{compteur}</h1>
 }
 
 export default App;
